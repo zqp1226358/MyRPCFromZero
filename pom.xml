@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>myRPCVersion0</module>
+        <module>myRPCVersion1</module>
     </modules>
 
     <properties>
