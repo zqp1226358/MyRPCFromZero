@@ -1,6 +1,7 @@
 # MyRPCFromZero
 pratice to implement rpc by Java
-参考资料：
+
+**参考资料：**
 [原始文档链接](https://gitee.com/cjwwarren/MyRPCFromZero)
 [全注释代码补充](https://blog.csdn.net/fisherish/article/details/122009738)
 
@@ -11,8 +12,15 @@ pratice to implement rpc by Java
 2. 返回值只支持User对象，如果需要传一个字符串或者Dog类，String对象呢(Response需要抽象)
 3. 客户端不够通用，host，port，与调用的方法都特定(需要抽象)
 
-## MyRPCVersion1
+## MyRPCVersion2
 common新增blog实体
 service新增BlogService和BlogServiceImpl以及ServiceProvider
 server整体抽象重构
 client没变，只是RPCclient多了一行调用代码
+
+> 知识点：动态代理
+
+## MyRPCVersion3
+引入Netty优化，主要对client和server这两部分进行改造，common和service没有变化。
+
+> 知识点：netty一些组件
