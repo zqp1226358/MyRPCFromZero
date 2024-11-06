@@ -15,6 +15,7 @@
         <module>myRPCVersion3</module>
         <module>myRPCVersion4</module>
         <module>myRPCVersion5</module>
+        <module>myRPCVersion6</module>
     </modules>
 
     <properties>

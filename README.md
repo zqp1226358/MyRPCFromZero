@@ -42,3 +42,7 @@ client没变，只是RPCclient多了一行调用代码
 
 > 知识点：注册中心zookeeper
 
+## MyRPCVersion6
+添加负载均衡
+实现负载均衡的两种策略：随机与轮询
+痛点: 客户端每次发起请求都要先与zookeeper进行通信得到地址，效率低下
