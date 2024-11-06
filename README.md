@@ -31,3 +31,14 @@ client没变，只是RPCclient多了一行调用代码
 实现了ObjectSerializer与JsonSerializer两种序列化器
 使用消息头加长度的方式解决粘包问题
 
+> 知识点：修改序列化方式
+
+## MyRPCVersion5
+添加一个注册中心zookeeper
+[【zookeeper】windows版zookeeper安装与启动 可能遇到的各种问题](https://blog.csdn.net/fisherish/article/details/118974827)
+
+加入了注册中心，一个完整的RPC框架三个角色都有了：服务提供者，服务消费者，注册中心
+缺点：根据服务名查询地址时，返回的总是第一个IP
+
+> 知识点：注册中心zookeeper
+
