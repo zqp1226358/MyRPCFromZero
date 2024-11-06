@@ -24,3 +24,10 @@ client没变，只是RPCclient多了一行调用代码
 引入Netty优化，主要对client和server这两部分进行改造，common和service没有变化。
 
 > 知识点：netty一些组件
+
+## MyRPCVersion4
+这里报了个错 invoke返回null  原因是在common的RPCResponse没有加@AllArgsConstructor这个注解
+在这个版本 自定义了消息格式在codec里面
+实现了ObjectSerializer与JsonSerializer两种序列化器
+使用消息头加长度的方式解决粘包问题
+
